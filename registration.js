@@ -154,9 +154,9 @@ $(".main__article__block__left__form__sixth__submit").on("click", function(event
 		if (formData.fname === admin.fname && formData.lname === admin.lname && formData.email === admin.email && formData.password === admin.password) {
 			window.location.href = "admin.html";
 		}
-
+		else {
 		localStorage.setItem(findMaxIndex() + 1, JSON.stringify(formData));
-
+		}
 		alert("good");
 
 		
