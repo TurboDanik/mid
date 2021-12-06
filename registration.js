@@ -34,7 +34,7 @@ window.addEventListener("load", function(event) {
 				flag = true;
 			}
 		}
-		if (!flag) {
+		if (flag === false) {
 			localStorage.setItem(findMaxIndex() + 1, JSON.stringify(admin));
 		}
 	}
